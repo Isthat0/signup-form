@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.bgpic{
+    height: 100%;
+    width: 320px;
+    position: relative;
+}
+
+.right-side{
+    flex:1;
+}
+
+form{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header p {
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.right-side > p{
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+button{
+    color: white;
+    background-color:#596D48;
+    border-radius: 5px;
+    padding: 7px 42px 7px 42px;
+}
