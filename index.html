@@ -10,6 +10,11 @@
 <body>
     <div class="left-side">
         <img class="bgpic" src="halie-west.jpg" alt="Leafy background">
+        <div class="bgcolor"></div>
+        <img class="odin" src="odin-lined.png" alt="Odin Logo">
+        <span>ODIN</span>
+        <div class="footer"></div>
+        <p>Photo by <u>Halie West</u> on <u>Unsplash</u></p>
     </div>
     <div class="right-side">
         <header>
@@ -20,30 +25,36 @@
         </header>
         <form>
             <p>Let's do this!</p>
-            <p>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="first-name" id="first-name">
-            </p>
-            <p>
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-            </p>
-            <p>
-                <label for="pwd">PASSWORD</label>
-                <input type="password" name="pwd" id="pwd">
-            </p>
-            <p>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="last-name" id="last-name">
-            </p>
-            <p>
-                <label for="phone">PHONE NUMBER</label>
-                <input type="tel" name="phone" id="phone">
-            </p>
-            <p>
-                <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                <input type="password" name="pwd" id="confirm-pwd">
-            </p>
+            <div class="form-row">
+                <p>
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" name="first-name" id="first-name">
+                </p>
+                <p>
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name">
+                </p>
+            </div>
+            <div class="form-row">    
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone">
+                </p>
+            </div>
+            <div class="form-row">
+                <p>
+                    <label for="pwd">PASSWORD</label>
+                    <input class="error" type="password" name="pwd" id="pwd">
+                </p>     
+                <p>
+                    <label for="confirm-pwd">CONFIRM PASSWORD</label>
+                    <input class="error" type="password" name="pwd" id="confirm-pwd">
+                </p>
+            </div>    
         </form>
         <p>
             <button>Create Account</button>
