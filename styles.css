@@ -10,15 +10,15 @@ body{
 
 .bgpic{
     min-height: 100vh;
-    width: 320px;
+    width: 500px;
     position: relative;
 }
 
 .bgcolor{
     background-color: black;
     position: absolute;
-    top: 45px;
-    width: 320px;
+    top: 95px;
+    width: 500px;
     height: 110px;
     margin: 0;
     opacity: .4;
@@ -26,8 +26,8 @@ body{
 
 .odin{
     position: absolute;
-    top: 50px;
-    left: 80px;
+    top: 100px;
+    left: 180px;
     width: 75px;
     height: 100px;
 }
@@ -35,61 +35,62 @@ body{
 .left-side span{
     font-family: norse-bold;
     position: absolute;
-    top: 65px;
-    left: 155px;
+    top: 115px;
+    left: 255px;
     color:white;
     font-size: 75px;
 }
 
 .left-side p{
     position: absolute;
-    bottom: -18px;
-    left: 50px;
+    bottom: -33px;
+    left: 150px;
     color: white;
 }
 
 .footer{
     background-color: black;
     position: absolute;
-    bottom: 0px;
+    bottom: -17px;
     height: 15px;
-    width: 320px;
+    width: 500px;
     opacity: .4;
 }
 
 .right-side{
     flex:1;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 form{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 header p {
-    padding-left: 15px;
-    padding-top: 30px;
-    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-size: x-large;
 }
 
+.form-head{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+}
 .right-side > p{
-    padding-left: 15px;
-    padding-bottom: 5px;
+    padding-left: 40px;
 }
 
-form input{
-    text-align: left;
-}
 
 form + p{
     display: inline-block;
 }
 
-.form-row :nth-child(2){
-    padding-left: 100px;
+.form-row p:nth-child(2){
+    margin-left: 140px;
 }
 
 label
@@ -107,6 +108,7 @@ button{
     background-color:#596D48;
     border-radius: 5px;
     padding: 7px 42px 7px 42px;
+    margin-top: 20px;
 }
 
 strong{
@@ -123,3 +125,11 @@ input:focus{
     border: 2px solid rgba(0, 102, 255, 0.884);
     box-shadow: rgb(48, 48, 48) 1px 1px;
 }
+
+input:required:invalid {
+    border-color: red;
+}
+
+input:required:valid {
+    border-color: green;
+}    

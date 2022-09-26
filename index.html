@@ -23,8 +23,8 @@
                sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>   
         </header>
-        <form>
-            <p>Let's do this!</p>
+        <form action="/signup-form/index.html" method="get">
+            <p class="form-head">Let's do this!</p>
             <div class="form-row">
                 <p>
                     <label for="first-name">FIRST NAME</label>
@@ -48,11 +48,11 @@
             <div class="form-row">
                 <p>
                     <label for="pwd">PASSWORD</label>
-                    <input class="error" type="password" name="pwd" id="pwd">
+                    <input class="error" type="password" name="pwd" id="pwd" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required title="*Passwords do not match">
                 </p>     
                 <p>
                     <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                    <input class="error" type="password" name="pwd" id="confirm-pwd">
+                    <input class="error" type="password" name="pwd" id="confirm-pwd" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$" required>
                 </p>
             </div>    
         </form>
